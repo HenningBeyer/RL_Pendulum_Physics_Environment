@@ -1,0 +1,40 @@
+1. Jupyter kernel setup 
+	conda create --name python_3.9 python==3.9 -y
+	conda activate python_3.9
+
+# check if cuda is installed; see its version:  nvidia-smi # --> version 12.2; else: install cuda (needs a cuda GPU) or go without cuda ## get your specific installation command: ## go to https://pytorch.org/get-started/locally/#start-locally ## alternatively go to: https://pytorch.org/get-started/previous-versions/
+	conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
+
+# Jupyter stuff (bare minimum to set up a kernel):
+	pip install jupyter jupyterlab ipykernel ipython ipyparallel 
+# Core Packages (for the kernel):
+	pip install numpy pandas sympy scipy matplotlib dill lightning panel watchfiles pygments hvplot jupyter_bokeh pyviz-comms
+
+# I had an Import Error with numpy (bug):
+# test with import numpy as np
+	pip uninstall -y numpy
+	pip uninstall -y setuptools
+	pip install setuptools
+	pip install numpy
+
+# change your directory: cd H:\Next_Projects\RL_Pendulum
+# install in editable mode for faster development:
+	pip install -e .\rl_pendulum
+	python -m ipykernel install --name python_3.9 --display-name "python_3.9" 
+
+
+2. Jupyter Lab setup 
+	## You will need Jupyter Lab 4.1.5 to avoid compatibility issues related to panel! ## Jupyter Lab 4.1.5 needs at least Python 3.8.5 ## make sure you are launching from the correct jupyter ## verify with: !jupyter lab --version --> 4.1.5 
+	## To launch Jupyter Lab 4.1.5 (from Python 3.9+), you can simply change the Python PATH variable to target a newer python 3.9 version ## for example prioritize "C:\Users\User\AppData\Local\Programs\Python\Python39" over "C:\Users\User\AppData\Local\Programs\Python\Python36"
+	## verify Python version again (outside the conda environment python_3.9): python --> 3.9+
+
+# It is recommended to launch this Jupyter setup for all your private applications related to Python 3.9.5 (Jupyter 4.1.5 is faster and overall just more handy; extensions should not be conflicting)
+# You can easily revert to your old Jupyter setup by proritizing, for example, your original Python 3.8 installation inside PATH (old Jupyter setups stay unaffected)
+# It is not recommended to launch Jupyter from Anaconda environenments (One needs to type 2-3 commands every time to launch Jupyter which is annoying!), but this is possible
+# Install these packages INSIDE or OUTSIDE the conda environment based on your preferences!
+	# configure the new Jupyter Lab 4.1.5 via pip installs:
+		pip install jupyter jupyterlab ipykernel ipython ipyparallel pyviz-comms panel plotly nbconvert playwright pyppeteer chromium 
+
+# launch panel from your conda environment:
+conda activate python_3.9
+panel serve Example_Notebook.ipynb --show --autoreload
