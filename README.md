@@ -3,8 +3,8 @@ This is a released package of a mathematically simulated pendulum that can be fl
 
 It is aimed to enable more flexible RL research on the difficult control problem of the cart-pendulum environment.
 
-Best view [this notebook](https://drive.google.com/file/d/14xU5jiUNQYhsnEKenXVMwa_ODvL46T5Q/view?usp=drive_link) (.html file; 281 MB) and review the overall clean code to get all the information you need. 
-Besides mathplotlib animations and LaTeX math summaries, this package also supports rendering Plotly Animations, which are a lot faster to render for RL research, and easier to embed into [Panel](https://panel.holoviz.org/reference/index.html) UIs. Checkout [✨this beautiful animation✨](https://drive.google.com/file/d/1ywLrFLX14-ld-VDXogV7GVBhv1LdpwNM/view?usp=sharing) (.html file; 56 MB).
+Best view [📒this notebook📒](https://drive.google.com/file/d/14xU5jiUNQYhsnEKenXVMwa_ODvL46T5Q/view?usp=drive_link) (.html file; 281 MB) and review the overall clean code to get all the information you need. 
+Besides mathplotlib animations and LaTeX math summaries, this package also supports rendering Plotly Animations, which are a lot faster to render for RL research, and easier to embed into [Panel](https://panel.holoviz.org/reference/index.html) UIs. Checkout [✨this animation✨](https://drive.google.com/file/d/1ywLrFLX14-ld-VDXogV7GVBhv1LdpwNM/view?usp=sharing) (.html file; 56 MB).
 
 I also provide an unfinished Panel UI prototype of a planned RL experiment platform that could help others build flexible UIs for experiment configurations and applications. It is out of my scope to finish this properly, however, this could provide a lot of value for other researchers. Here is a [🎞video demonstration🎞](https://drive.google.com/file/d/1xNR0xIT6O0zWD6OTT-0PAvU9RL7nfIQx/view?usp=sharing) of the current Panel UI implementation.
 
