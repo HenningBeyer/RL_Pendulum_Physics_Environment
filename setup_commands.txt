@@ -2,20 +2,10 @@
 	conda create --name python_3.9 python==3.9 -y
 	conda activate python_3.9
 
-# check if cuda is installed; see its version:  nvidia-smi # --> version 12.2; else: install cuda (needs a cuda GPU) or go without cuda ## get your specific installation command: ## go to https://pytorch.org/get-started/locally/#start-locally ## alternatively go to: https://pytorch.org/get-started/previous-versions/
-	conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y
-
 # Jupyter stuff (bare minimum to set up a kernel):
 	pip install jupyter jupyterlab ipykernel ipython ipyparallel 
 # Core Packages (for the kernel):
 	pip install numpy pandas sympy scipy matplotlib dill lightning panel watchfiles pygments hvplot jupyter_bokeh pyviz-comms
-
-# I had an Import Error with numpy (bug):
-# test with import numpy as np
-	pip uninstall -y numpy
-	pip uninstall -y setuptools
-	pip install setuptools
-	pip install numpy
 
 # change your directory: cd H:\Next_Projects\RL_Pendulum
 # install in editable mode for faster development:
