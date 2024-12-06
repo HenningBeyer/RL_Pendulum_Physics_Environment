@@ -24,4 +24,11 @@ https://github.com/user-attachments/assets/313f5685-c03e-49e9-bb92-6604d2eebe7d
 ![image](https://github.com/user-attachments/assets/c6382672-4b8a-45b5-9293-b4cf2dcb3500)
 ![image](https://github.com/user-attachments/assets/7c89c8be-cfe5-453d-8e5f-10a71c4f7551)
 
+## Setup
+
+You generally have to follow the [setup_commands.txt](https://github.com/HenningBeyer/RL_Pendulum_Physics_Environment/blob/main/setup_commands.txt) to set up and launch the Panel UI. 
+
+If you only want to run the RL pendulum in a notebook, it is recommended to only copy the self-contained directory [rl_pendulum/envs/cart_pendulum](https://github.com/HenningBeyer/RL_Pendulum_Physics_Environment/tree/main/rl_pendulum/envs/cart_pendulum), while leaving the other files. The other files won't be needed, and just give functionality to run the Panel UI.
+
+🚧 Note that the [rl_pendulum/envs/rl_cart_pendulum](https://github.com/HenningBeyer/RL_Pendulum_Physics_Environment/tree/main/rl_pendulum/envs/rl_cart_pendulum) is not fully functional, but provides an extensive feature engineering pipeline. It is planned to reimplement the environment in JAX later and to use [Stoix](https://github.com/EdanToledo/Stoix) agents to solve it without much feature engineering.
 
