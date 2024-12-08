@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from matplotlib import animation
 from IPython.display import Math, HTML, display
 
-
+from rl_pendulum.utils.plotting import get_empty_square_animation_fig, update_figure_with_anim_widgets_and_style_buttons
 
 
 
